@@ -1,24 +1,23 @@
 public class MyProgram {
-    /*Also, create another class that will also use your User-Defined Class to perform some simple operations.
-     * 
-     * Create at least 3 instances of your class, using a default and a parameterized constructor.
-     * 
-     * Perform some simple programming task, i.e., a loop, or a comparison, or other procedure.
-     * 
-     * Ensure you have some output to show:
-     * System.out.println("Cool information")
-     */
-    public static void main (String[] args){
-     //   Employee chauffer = new Employee ();
-        Employee teacher = new Employee("sssss");
-        Employee doctor = new Employee("Doctor");
-        
-        Employee [] employees = 
-        {chauffer, teacher, doctor};
 
-        //Calculate staffing cost!
-        //for each loop that iterates through
-        //each employee and adds weeklyPaydrate
-        //to a total.
+    public static void main(String[] args){
+        Product phone1 = new Product("iPhone X", 100.00, 10, true);
+        Product phone2 = new Product("Samsung Galaxy S22", 100.00, 20, true);
+        Product phone3 = new Product("Nokia Brick", 20.00, 100, true);
+        Product phone4 = new Product();
+
+        //Setting up Default Constructor
+        phone4.setProductName("Xiaomi");
+        phone4.setProductAmount(4);
+        phone4.setProductPrice(50);
+        phone4.setProductisSold(false); //I think I can set up a loop with If test to check whether device is sold or not, then decide whether to calculate or just return a message saying device is not sold at this store. Ran out of time so I could not implement it
+
+
+        //Output here
+       System.out.println(phone1.getProductName() + " sold " + phone1.getProductAmount() + " pieces for a total of $" + phone1.getProductAmount()*phone1.getProductPrice());
+       System.out.println(phone2.getProductName() + " sold " + phone2.getProductAmount() + " pieces for a total of $" + phone2.getProductAmount()*phone2.getProductPrice());
+       System.out.println(phone3.getProductName() + " sold " + phone3.getProductAmount() + " pieces for a total of $" + phone3.getProductAmount()*phone3.getProductPrice());
+       System.out.println(phone4.getProductName() + " sold " + phone3.getProductAmount() + " pieces for a total of $" + phone3.getProductAmount()*phone3.getProductPrice());
+
     }
 }
